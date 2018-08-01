@@ -1,0 +1,41 @@
+//menu button
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  top: 2.1875rem;
+  right: 2.1875rem;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 1.75rem;
+    height: 0.1875rem;
+    margin: 0 0 0.3125rem 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // Line 1
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+      }
+
+      // Line 2
+      &:nth-child(2) {
+        //background: red;
+        opacity: 0;
+      }
+
+      // Line 3
+      &:nth-child(3) {
+        //background: red;
+        transform: rotate(-45deg) translate(0.4375rem, -0.375rem);
+      }
+    }
+  }
+}
