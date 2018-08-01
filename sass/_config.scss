@@ -2,10 +2,20 @@ $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url("/docs/img/background.jpg");
+$portrait-image: url("/docs/img/portrait.jpg");
 $background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
+}
+
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
 }
 
 @mixin background {
