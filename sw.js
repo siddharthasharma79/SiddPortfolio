@@ -1,5 +1,5 @@
 //Caching variables
-const cacheName = 'v4';
+const cacheName = 'v3';
 
 // Call install event 
 self.addEventListener('install', e => {
@@ -9,21 +9,20 @@ self.addEventListener('install', e => {
 
 // Call activate event
 self.addEventListener('activate', e => {
-    
+    console.log('Service Worker: Activated');
     // Removing unwanted cache
     e.waitUntil(
         caches.keys().then( cacheNames => {
-            console.log(cacheNames);
             return Promise.all(
                 cacheNames.map(cache => {
                     if(cache !== cacheName) {
-                        console.log('Service Worker: Clearing Old Cache');
+                        console.log('Service Worker: Clearing Old Cache ' + cache );
                         caches.delete(cache);
-                        
                     }
                 })        
             )
         })
+        .catch(err => console.log('Error: ' + err))
     );
     
 });
