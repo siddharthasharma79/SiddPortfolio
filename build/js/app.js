@@ -5,7 +5,6 @@ function createNode(el) {
 function append(parent, el) {
     return parent.appendChild(el);
 }
-console.log('called');
 
 const ul = document.getElementById('people');
 
