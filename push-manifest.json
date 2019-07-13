@@ -10,7 +10,7 @@
       "type": "script",
       "weight": 1
     },
-    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+    "node_assets/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
       "type": "script",
       "weight": 1
     }
@@ -26,7 +26,7 @@
       "type": "script",
       "weight": 1
     },
-    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+    "node_assets/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
       "type": "script",
       "weight": 1
     }
@@ -42,7 +42,7 @@
       "type": "script",
       "weight": 1
     },
-    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+    "node_assets/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
       "type": "script",
       "weight": 1
     }
@@ -58,7 +58,7 @@
       "type": "script",
       "weight": 1
     },
-    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+    "node_assets/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
       "type": "script",
       "weight": 1
     }

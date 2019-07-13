@@ -96,7 +96,7 @@
     "build": "gulp",
     "clean": "gulp clean",
     "prepack": "npm run build",
-    "regen-package-lock": "rm -rf node_modules package-lock.json; npm install",
+    "regen-package-lock": "rm -rf node_assets package-lock.json; npm install",
     "test": "wct"
   },
   "version": "2.2.7"

@@ -7752,7 +7752,7 @@ var propertiesMixin = {
   PropertiesMixin: PropertiesMixin
 };
 const bundledImportMeta = { ...import.meta,
-  url: new URL('../../node_modules/%40polymer/polymer/lib/mixins/element-mixin.js', import.meta.url).href
+  url: new URL('../../node_assets/%40polymer/polymer/lib/mixins/element-mixin.js', import.meta.url).href
 };
 const version = '3.2.0';
 const builtCSS = window.ShadyCSS && window.ShadyCSS['cssBuild']; /**
@@ -11158,7 +11158,7 @@ var polymer_dom = {
   addDebouncer: enqueueDebouncer
 };
 const bundledImportMeta$1 = { ...import.meta,
-  url: new URL('../../node_modules/%40polymer/polymer/lib/legacy/legacy-element-mixin.js', import.meta.url).href
+  url: new URL('../../node_assets/%40polymer/polymer/lib/legacy/legacy-element-mixin.js', import.meta.url).href
 };
 let styleInterface = window.ShadyCSS; /**
                                        * Element class mixin that provides Polymer's "legacy" API intended to be
